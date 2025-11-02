@@ -1,0 +1,16 @@
+﻿<Shell
+    x:Class="PackageTracker.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PackageTracker.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="PackageTracker">
+
+    <ShellContent 
+        Route="MainPage"
+        ContentTemplate="{DataTemplate local:MainPage}" />
+
+    <ShellContent 
+        Route="ResultsPage"
+        ContentTemplate="{DataTemplate local:ResultsPage}" />
+</Shell>
